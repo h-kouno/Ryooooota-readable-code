@@ -1,6 +1,6 @@
 <?php
 
-$recipe_data = array();
+$recipeData = array();
 
 //読み込むファイルの指定
 if (isset($argv) && isset($argv[1]) && $argv[1] != '') {
