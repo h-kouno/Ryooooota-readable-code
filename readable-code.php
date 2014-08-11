@@ -16,15 +16,12 @@ if (isset($argv) && isset($argv[1]) && $argv[1] != '') {
     exit;
 }
 
-
 //ファイル読み込み
 $handle = fopen($readFile, "r");
 //行を読み込む
 while (($buffer = fgets($handle, 4096)) !== false) {
     echo $buffer;
 }
-
-
 
 //エラーメッセージ表示用関数
 function getErrorMsg($code) {
