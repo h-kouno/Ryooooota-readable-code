@@ -29,6 +29,14 @@ https://github.com/Ryooooota/Ryooooota-readable-code.git
 　　■実行コマンド例
 　　[パス省略]readable-code.php recipe-data.txt
 
+○仕様4
+ 入力ファイルのフォーマットはcsvとする
+ 「ID、レシピ名」で入力しておく
+ ※記載例
+  "1","オムライス"
+  "2","親子丼"
+  "3","杏仁豆腐"
+
 
 
 
