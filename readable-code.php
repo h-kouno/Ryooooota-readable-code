@@ -1,5 +1,4 @@
 <?php
-//var_dump($argv);
 
 $recipe_data = array();
 
@@ -24,16 +23,14 @@ if (isset($argv) && isset($argv[1]) && $argv[1] != '') {
 $recipeFile = fopen($readFile, "r");
 //行を読み込み、配列へ格納
 while ($line = fgetcsv($recipeFile)) {
-    $recipe_data[] = $line;
+    $recipeData[] = $line;
 }
-// var_dump($recipe_data);
-// exit;
 
 // ファイルを閉じる
 fclose($recipeFile);
 
 // レシピのタイトルを表示する
-foreach ($recipe_data as $id => $recipe) {
+foreach ($recipeData as $id => $recipe) {
     $recipeId = $recipe[0];
     $recipeName = $recipe[1];
     echo "$recipeId: $recipeName\n";
